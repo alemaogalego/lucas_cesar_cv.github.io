@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts/script.js"></script>
+    <script src="scripts/bandeira.js"></script>
+    <script src="scripts/emailcopy.js"></script>
+
+    <title>Lucas César</title>
+</head>
+<body onload="changeLanguage('pt-br')">
+    <div class="nav navbar">
+        <div class="nav-row">
+            <div class="navbar" >
+                <div class="language-switch">
+                    <button class="language-botao selected" id="language-pt" onclick="selecionarIdioma('pt-br')">
+                        <img src="img/flag-br.svg" alt="Bandeira do Brasil">
+                    </button>
+                    <button class="language-botao" id="language-en" onclick="selecionarIdioma('en')">
+                        <img src="img/flag-us.svg" alt="Bandeira dos Estados Unidos">
+                    </button>
+                </div>
+            </div>
+            <div class="nav-opc">
+                <a href="#inicio" class="nav-text" id="nav-about-btn" ling="start">Inicio</a>
+            </div>
+            <div class="nav-opc">
+                <a href="#sobre" class="nav-text" id="nav-about-btn" ling="about">Sobre</a>
+            </div>
+            <div class="nav-opc">
+                <a href="#projetos" class="nav-text" ling="projects">Projetos</a>
+            </div>
+            <div class="nav-opc">
+                <a href="#skills" class="nav-text" ling="skills">Skills</a>
+            </div>
+            <div class="nav-opc">
+                <a href="#contato" class="nav-text" ling="contact">Contato</a>
+            </div>
+        </div>    
+    </div>
+    <main id="inicio" class='cabecalho'>       
+        <div>
+            <img src="img/minha_foto.png" alt="Lucas César" class="foto-perfil"></img>
+            <h1 class="title">Lucas César</h1>
+            <p class="sub-tittle" ling="desenv">Desenvolvedor Python, HTML, CSS, C e Java</p>
+        </div>
+        <div class="secao_divisao" ling="scroll-text">▼ Role para baixo ▼</div>
+        <section id="sobre" class="sobre">
+            <h2 class="sobre-titulo" ling="aboutme">Sobre Mim</h2>
+            <div class="sobre-container">
+                <p class="sobre-para" ling="about-text" >Meu nome é Lucas César Lorena, tenho 26 anos e moro em Campinas, São Paulo. Sou estudante de Ciência da Computação e apaixonado por tecnologia e inovação, sempre buscando aprender e desenvolver novas habilidades. Tenho conhecimento em Python, HTML, CSS, C e Java, além de ser formado em Mecatrônica.</p>
+            </div>
+        </section>
+        <div class="secao_divisao" ling="scroll-text">▼ Role para baixo ▼</div>
+        <section id="projetos" class="projetos">
+            <h2 class="projeto-titulo" ling="myprojetcs">Meus Projetos</h2>
+            <div class="projeto-caixa">
+
+                <a class="projeto-card" href="https://github.com/alemaogalego/criptografia.APS" target="_blank">
+                    <img src="img/criptografia.png" alt="projeto 1" class="projeto-img">
+                    <div class="espaco-projeto">
+                        <h3 class="titulo-projeto" ling="crip">Criptografia</h3>
+                        <p class="para-projetos"ling="descricrip">Sistema de criptografia baseado em substituição aleatória de caracteres ASCII usando coordenadas.</p>
+                        <p class="tecno">Python</p>
+                        <img src="img/github.svg" alt="html" class="tecno-img">
+                    </div>
+                </a>
+
+                <a class="projeto-card" href="https://github.com/alemaogalego/PagWeb-Painel-Solar" target="_blank">
+                    <img src="img/painel_solar.jpg" alt="projeto 2" class="projeto-img">
+                    <div class="espaco-projeto">
+                        <h3 class="titulo-projeto" ling="painelweb">Eclipse</h3>
+                        <p class="para-projetos" ling="descripainel">Página web informativa sobre os diferentes tipos de painéis solares, suas vantagens e desvantagens.</p>
+                        <p class="tecno">HTML - CSS - Javascript</p>
+                        <img src="img/github.svg" alt="html" class="tecno-img">
+                    </div>
+                </a>
+
+                <a class="projeto-card" href="https://github.com/alemaogalego/Restaurante_API" target="_blank">
+                    <img src="img/api_restaurante.png" alt="projeto 2" class="projeto-img">
+                    <div class="espaco-projeto">
+                        <h3 class="titulo-projeto" ling="api-rest">Api Restaurante</h3>
+                        <p class="para-projetos" ling="api-desc">API em FastAPI para restaurantes, explorando POO, JSON com ambientes virtuais</p>
+                        <p class="tecno">Python - Json - FastAPI</p>
+                        <img src="img/github.svg" alt="html" class="tecno-img">
+                    </div>
+                </a>
+                
+            </div>    
+        </section>
+        <div class="secao_divisao" ling="scroll-text">▼ Role para baixo ▼</div>
+        <section id="skills" class="skills">
+            <h2 class="skills-titulo" ling="skillsmy">Minhas Skills</h2>
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <h3 class="skill-name">Git</h3>
+                    <div class="skill-dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <h3 class="skill-name">C</h3>
+                    <div class="skill-dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot "></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <h3 class="skill-name">Java</h3>
+                    <div class="skill-dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <h3 class="skill-name">Python</h3>
+                    <div class="skill-dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <h3 class="skill-name">HTML/CSS</h3>
+                    <div class="skill-dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 class="skill-name">MYSQL</h3>
+                    <div class="skill-dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot "></span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 class="skill-name" ling="ingl">Inglês</h3>
+                    <div class="skill-dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot "></span>
+                        <span class="dot "></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div class="secao_divisao" ling="scroll-text">▼ Role para baixo ▼</div>
+        <section id="contato" class="contato">
+            <h2 class="contato-titulo" ling="mycontat">Meu Contato</h2>
+            <p class="contato-texto" ling="contato-texto">Precisa de mais informações? Entre em contato comigo!</p>
+            <div class="contato-caixa">
+                <a class="contato-card" href="https://github.com/alemaogalego" target="_blank">
+                    <img src="img/github.svg" alt="git" class="git-img">
+                </a>
+                <a class="contato-card" href="https://www.linkedin.com/in/lucas-cesar-lorena/" target="_blank">
+                    <img src="img/linkedin-logo.svg" alt="linkedin" class="git-img">
+                </a>
+            </div>
+            
+            <hr class="separador2">
+            <h4 class='titulo-projeto'>Email</h4>
+            <div class="email-caixa">
+                <a href="mailto:lucascesar.lorena@gmail.com" class="email-card">
+                    lucascesar.lorena@gmail.com
+                </a>
+            </div>
+                <button class="copy-btn" onclick="copyEmail()" ling="copyemail">Copiar E-mail</button>
+            <hr class="separador2"></hr>
+            <h4 class='titulo-projeto'ling="cv">Curriculo</h4>
+            <div class="cv-caixa">
+                <a href="Lucas-Cv1.pdf" download="Lucas-Cv1" class="cv-card" ling="cv">
+                    Curriculo
+                </a>
+            </div>
+        </section>
+    </main>    
+</body>
+</html>

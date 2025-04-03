@@ -1,0 +1,37 @@
+{
+    "start": "Start",
+    "about": "About",
+    "desenv": "Developer Python, HTML, CSS, C and Java",
+    "aboutme": "About Me",
+    "about-text": "My name is Lucas César Lorena, I'm 26 years old and I live in Campinas, São Paulo. I'm a Computer Science student and passionate about technology and innovation, always seeking to learn and develop new skills. I have knowledge of Python, HTML, CSS, C and Java, and I have a degree in Mechatronics.",
+    "scroll-text": "\u25BC Roll down \u25BC",
+
+
+
+
+    "projects": "Projects",
+    "myprojetcs": "My Projects",
+    "crip": "Cryptography",
+    "descricrip":"Cryptography system based on random substitution of ASCII characters using coordinates.",
+    "painelweb": "Eclipse",
+    "descripainel": "Informative web page about the different types of solar panels, their advantages and disadvantages.",
+    "api-rest": "Api Restaurant",
+    "api-desc": "FastAPI API for restaurants, exploring object-oriented programming, JSON with virtual environments",
+
+
+
+
+    "skills": "Skills",
+    "skillsmy": "My Skills",
+    "ingl": "English",
+
+
+
+
+    "contact": "Contact",
+    "mycontat": "My Contact",
+    "contato-texto": "Need more information? Contact me!",
+    "copyemail": "Copy Email",
+    "cv": "Curriculum"
+}
+
