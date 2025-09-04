@@ -536,3 +536,40 @@ html{
     box-shadow: 0 10px 20px rgb(165, 94, 234);
     transform: translateY(-5px) scale(1.03);
 }
+
+/* Adicione este CSS ao seu arquivo de estilos */
+
+.skills-container-icons {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os ícones quebrem a linha */
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os ícones */
+    padding: 20px 0;
+}
+
+.skill-box {
+    display: flex;
+    flex-direction: column; /* Ícone em cima, texto embaixo */
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #131B23; /* Cor de fundo do card */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-box i {
+    font-size: 48px; /* Tamanho do ícone */
+}
+
+.skill-box span {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
