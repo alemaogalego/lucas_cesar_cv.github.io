@@ -17,7 +17,8 @@
     "descripainel": "Informative web page about the different types of solar panels, their advantages and disadvantages.",
     "api-rest": "Api Restaurant",
     "api-desc": "FastAPI API for restaurants, exploring object-oriented programming, JSON with virtual environments",
-
+    "luukz-rest": "LuukzTools",
+    "luukz-desc": "Development of a desktop application with graphical user interface (GUI) in Python for creating and executing custom macros.",
 
 
 

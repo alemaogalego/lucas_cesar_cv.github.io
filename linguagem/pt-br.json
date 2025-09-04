@@ -21,8 +21,9 @@
     "descripainel": "Página web informativa sobre os diferentes tipos de painéis solares, suas vantagens e desvantagens.",
     "api-rest": "Api Restaurante",
     "api-desc": "API em FastAPI para restaurantes, explorando programação orientada a objetos, JSON com ambientes virtuais",
-
-
+    "luukz-rest": "LuukzTools",
+    "luukz-desc": "Desenvolvimento de uma aplicação desktop com interface gráfica (GUI) em Python para a criação e execução de macros personalizadas.",
+    
 
 
     "skills": "Skills",
