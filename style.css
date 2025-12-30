@@ -556,6 +556,45 @@ html{
     background-color: #131B23; /* Cor de fundo do card */
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Remove sublinhado se for link */
+    color: inherit; /* Mantém a cor do texto */
+    cursor: pointer;
+    position: relative; /* Para posicionar o badge */
+}
+
+/* Estilo para skills com certificado */
+.skill-box.com-certificado {
+    border: 1px solid var(--selectcolor);
+    box-shadow: 0 0 10px rgba(0, 168, 232, 0.1);
+}
+
+.skill-box.com-certificado:hover {
+    box-shadow: 0 0 20px rgba(0, 168, 232, 0.5);
+    transform: translateY(-5px) scale(1.05);
+}
+
+.badge-certificado {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, #00A8E8, #A55EEA);
+    color: white;
+    font-size: 0.9vh;
+    padding: 0.3vh 0.8vh;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 10;
+    white-space: nowrap; /* Garante que o texto não quebre */
+}
+
+.skills-desc {
+    text-align: center;
+    color: var(--escritafraca);
+    margin-bottom: 4vh;
+    font-size: 2vh;
+    margin-top: -3vh; /* Aproxima do título */
 }
 
 .skill-box:hover {
@@ -571,4 +610,56 @@ html{
     margin-top: 10px;
     font-size: 14px;
     font-weight: bold;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--backnavecolor);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid var(--selectcolor);
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-btn {
+    color: var(--escrita);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: var(--selectcolor);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#iframe-certificado {
+    flex-grow: 1;
+    border: none;
+    border-radius: 10px;
 }

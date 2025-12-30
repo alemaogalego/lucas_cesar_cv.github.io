@@ -32,4 +32,24 @@ function copyToClipboard() {
     function setLanguagePreference(lang) {
       localStorage.setItem('linguagem', lang);
     }
+
+// Funções para o Modal de Certificados
+function abrirCertificado(url) {
+    const modal = document.getElementById('modal-certificado');
+    const iframe = document.getElementById('iframe-certificado');
+    
+    iframe.src = url;
+    modal.style.display = 'flex'; // Usando flex para centralizar
+}
+
+function fecharCertificado(event) {
+    // Fecha se clicar no botão X ou fora do conteúdo do modal
+    if (event.target.id === 'modal-certificado' || event.target.classList.contains('close-btn')) {
+        const modal = document.getElementById('modal-certificado');
+        const iframe = document.getElementById('iframe-certificado');
+        
+        modal.style.display = 'none';
+        iframe.src = ''; // Limpa o src para parar o carregamento/vídeo se houver
+    }
+}
     

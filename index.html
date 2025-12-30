@@ -104,11 +104,13 @@
         <div class="secao_divisao" ling="scroll-text">▼ Role para baixo ▼</div>
         <section id="skills" class="skills">
             <h2 class="skills-titulo" ling="skillsmy">Minhas Skills</h2>
+            <p class="skills-desc" ling="skills-desc">Clique nos itens destacados para ver os certificados</p>
             <div class="skills-container-icons">
 
-                <div class="skill-box">
+                <div class="skill-box com-certificado" onclick="abrirCertificado('certificados/git-curso.pdf')">
                     <i class="devicon-git-plain colored"></i>
                     <span>Git</span>
+                    <span class="badge-certificado">Certificado</span>
                 </div>
 
                 <div class="skill-box">
@@ -121,9 +123,10 @@
                     <span>Java</span>
                 </div>
 
-                <div class="skill-box">
+                <div class="skill-box com-certificado" onclick="abrirCertificado('certificados/python-curso.pdf')">
                     <i class="devicon-python-plain colored"></i>
                     <span>Python</span>
+                    <span class="badge-certificado">Certificado</span>
                 </div>
 
                 <div class="skill-box">
@@ -173,5 +176,12 @@
             </div>
         </section>
     </main>    
+    <!-- Modal para Certificados -->
+    <div id="modal-certificado" class="modal" onclick="fecharCertificado(event)">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharCertificado(event)">&times;</span>
+            <iframe id="iframe-certificado" src="" width="100%" height="100%"></iframe>
+        </div>
+    </div>
 </body>
 </html>
