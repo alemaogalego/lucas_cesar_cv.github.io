@@ -569,7 +569,7 @@ html{
 }
 
 .skill-box.com-certificado:hover {
-    box-shadow: 0 0 20px rgba(0, 168, 232, 0.5);
+    box-shadow: 0 0 20px rgba(164, 94, 234, 0.973);
     transform: translateY(-5px) scale(1.05);
 }
 
